@@ -3,7 +3,10 @@
 </div>
 <hr />
 <section class="section">
-  <%# <%= render @cart.line_items %> %>
+<%@cart.line_items. each do |item| %>
+<%=render "line_items/line_item_html", {line_item: item}%>
+<%end%>
+
   
 
   <div class="columns">
