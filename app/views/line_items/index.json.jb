@@ -1,0 +1,8 @@
+@line_items.map do |line_item|
+  {
+    id: line_item.id,
+    item_id: line_item.item_id,
+    cart_id: line_item.cart_id,
+    url: line_item_url(line_item, format: :json)
+  }
+end

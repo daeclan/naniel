@@ -1,0 +1,7 @@
+{
+  id: @line_item.id,
+  item_id: @line_item.item_id,
+  cart_id: @line_item.cart_id,
+  created_at: @line_item.created_at,
+  updated_at: @line_item.updated_at
+}

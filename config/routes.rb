@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
+  resources :line_items
+  resources :carts
+  resources :items
+  resources :list_items
   devise_for :users, controllers: {
     registrations: 'registrations'
   }
-  root 'store#index'
+  root 'items#index'
+  
 
   # get 'store/index'
   # EXAMPLE HTML ROUTE
